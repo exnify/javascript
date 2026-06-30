@@ -1,0 +1,27 @@
+{
+  "name": "exnify",
+  "version": "1.0.0",
+  "description": "Official JavaScript/TypeScript client for the Exnify currency API",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": ["exnify", "currency", "exchange-rates", "api"],
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.3"
+  }
+}
